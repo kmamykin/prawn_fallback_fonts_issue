@@ -22,7 +22,8 @@ Prawn::Document.generate "fallback_fonts.pdf" do
 
   text "using formatted_text_box works with fallback_fonts and :style=>:bold"
   formatted_text_box [
-    {:text=>"Normal text ", :styles=>[:normal], :size=>30},
-    {:text=>"Bold text 虫爬小个写事难么", :styles=>[:bold], :size=>30}],
-    :at=>[0, 6.5.in], :width=>8.in, :height=>1.in
+    {:text=>"Normal text\n", :styles=>[:normal], :size=>30},
+    {:text=>"Normal text 虫爬小个写事难么\n", :styles=>[:normal], :size=>30},
+    {:text=>"Bold text 虫爬小个写事难么\n", :styles=>[:bold], :size=>30}
+  ], :at=>[0, 6.5.in], :width=>8.in, :height=>4.in
 end
